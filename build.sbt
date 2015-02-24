@@ -12,7 +12,9 @@ scalaVersion := "2.10.4"
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
 resolvers ++= Seq(
-  "spray repo" at "http://repo.spray.io/"
+  "Maven2 Local" at Resolver.mavenLocal.root,
+  "Spray Repo" at "http://repo.spray.io/",
+  "Sonatype OSS Maven Repository" at "https://oss.sonatype.org/content/groups/public"
 )
 
 libraryDependencies ++= Seq(
