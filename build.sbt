@@ -1,13 +1,13 @@
 import com.typesafe.sbt.SbtStartScript
 import spray.revolver.RevolverPlugin.Revolver
 
-organization  := "in.kinshuk"
+organization := "in.kinshuk"
 
-version       := "0.1"
+version := "0.1"
 
-name          := "scala-rpi"
+name := "scala-rpi"
 
-scalaVersion  := "2.10.4"
+scalaVersion := "2.10.4"
 
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
@@ -16,7 +16,12 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "org.specs2"          %%  "specs2"        % "1.14" % "test"
+  "io.spray" % "spray-can" % "1.2-M8",
+  "io.spray" % "spray-routing" % "1.2-M8",
+  "io.spray" % "spray-testkit" % "1.2-M8" % "test",
+  "com.typesafe.akka" %% "akka-actor" % "2.2.0-RC1",
+  "com.typesafe.akka" %% "akka-testkit" % "2.2.0-RC1" % "test",
+  "org.specs2" %% "specs2" % "1.14" % "test"
 )
 
 parallelExecution in Test := false
