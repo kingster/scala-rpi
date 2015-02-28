@@ -18,7 +18,7 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "com.pi4j" % "pi4j-core" % "0.0.5",
+  "com.pi4j" % "pi4j-core" % "1.0-SNAPSHOT",
   "io.spray" % "spray-can" % "1.2-M8",
   "io.spray" % "spray-routing" % "1.2-M8",
   "io.spray" % "spray-testkit" % "1.2-M8" % "test",

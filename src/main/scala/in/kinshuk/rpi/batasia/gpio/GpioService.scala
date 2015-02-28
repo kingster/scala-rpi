@@ -7,14 +7,14 @@ import com.pi4j.io.gpio.{PinState, RaspiPin, GpioFactory}
  */
 object GpioService {
 
-  val gpio = GpioFactory.getInstance()
+  val instance = GpioFactory.getInstance()
 
   //  val pin = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_01,  PinState.LOW)
 
   def shutdown(): Unit = {
     // stop all GPIO activity/threads by shutting down the GPIO controller
     // (this method will forcefully shutdown all GPIO monitoring threads and scheduled tasks)
-    gpio.shutdown()
+    instance.shutdown()
   }
 
 }

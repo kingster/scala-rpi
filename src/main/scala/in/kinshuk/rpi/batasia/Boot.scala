@@ -1,5 +1,7 @@
 package in.kinshuk.rpi.batasia
 
+import in.kinshuk.rpi.batasia.services.DancingLights
+
 /**
  * Created by kinshuk.bairagi on 24/02/15.
  */
@@ -32,5 +34,8 @@ object Boot extends App {
       |
       |
     """.stripMargin)
+
+  DancingLights.dance()
+
 
 }

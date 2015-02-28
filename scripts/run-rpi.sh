@@ -39,4 +39,4 @@ sbt assembly
 
 
 scp target/scala-2.10/scala-rpi.jar $HOST:./scala-rpi.jar
-ssh $HOST 'java -Xss8M -Xms256M -jar scala-rpi.jar'
+ssh $HOST 'sudo java -Xss8M -Xms256M -jar scala-rpi.jar'
