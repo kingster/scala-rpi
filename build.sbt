@@ -14,11 +14,12 @@ scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 resolvers ++= Seq(
   "Maven2 Local" at Resolver.mavenLocal.root,
   "Spray Repo" at "http://repo.spray.io/",
-  "Sonatype OSS Maven Repository" at "https://oss.sonatype.org/content/groups/public"
+  "Sonatype OSS Maven Repository" at "https://oss.sonatype.org/content/groups/public",
+  "Sonata App Fuse" at "https://oss.sonatype.org/content/groups/appfuse-with-staging/"
 )
 
 libraryDependencies ++= Seq(
-  "com.pi4j" % "pi4j-core" % "1.0-SNAPSHOT",
+  "com.pi4j" % "pi4j-core" % "1.0",
   "io.spray" % "spray-can" % "1.2-M8",
   "io.spray" % "spray-routing" % "1.2-M8",
   "io.spray" % "spray-testkit" % "1.2-M8" % "test",
